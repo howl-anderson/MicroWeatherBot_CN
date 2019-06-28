@@ -1,0 +1,11 @@
+# for Dev
+*.db
+*.log
+models/*
+data/nlu.json
+
+# for IDE
+.idea
+
+# for python
+__pycache__/*

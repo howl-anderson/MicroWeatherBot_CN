@@ -1,0 +1,7 @@
+-e ../ioflow
+paddlepaddle==1.4.1
+-e ../seq2annotation
+-e ../seq2label
+-e ../../Repositories/tokenizer_tools
+-e ../../Repositories/tf_metrics
+tensorflow==1.14.0
