@@ -1,7 +1,2 @@
--e git+https://github.com/howl-anderson/ioflow.git@9afada154342c3075819893eeb7ff8dccbc1dc0a#egg=ioflow
--e git+https://github.com/howl-anderson/rasa_nlu_addons.git@61156a92f34a63a91409fc1392dbe62a338bc1d1#egg=rasa_nlu_addons
--e git+https://github.com/howl-anderson/seq2annotation.git@a73aa1177c8d57536a29b4f5fbff03baa53fdea9#egg=seq2annotation
--e git+https://github.com/howl-anderson/seq2label.git@83acae82a84332f7393842d60d0a3c4931f5461c#egg=seq2label
--e git+https://github.com/howl-anderson/tf_metrics.git@da014b01b7b34a86a9b354baa904c3d20158d0f3#egg=tf_metrics
--e git+https://github.com/howl-anderson/tokenizer_tools.git@5762ff1389c6348eecc4fa7768882f8c752cf500#egg=tokenizer_tools
+rasa_contrib
 tensorflow==1.14.0
