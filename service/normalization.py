@@ -1,28 +1,36 @@
-def text_date_to_number_date(text_date):
+import datetime
+
+
+def text_to_date(text_date):
+    today = datetime.datetime.now()
+    one_more_day = datetime.timedelta(days=1)
+
     if text_date == "今天":
-        return 0
+        return today.date()
     if text_date == "明天":
-        return 1
+        return (today + one_more_day).date()
     if text_date == "后天":
-        return 2
+        return (today + one_more_day * 2).date()
 
     # Not supported by weather API provider freely
     if text_date == "大后天":
         # return 3
-        return text_date
+        return (today + one_more_day * 3).date()
 
     if text_date.startswith("星期"):
         # TODO: using calender to compute relative date
-        return text_date
+        # not support yet
+        return None
 
     if text_date.startswith("下星期"):
         # TODO: using calender to compute relative date
-        return text_date
+        # not support yet
+        return None
 
     # follow APIs are not supported by weather API provider freely
     if text_date == "昨天":
-        return text_date
+        return None
     if text_date == "前天":
-        return text_date
+        return None
     if text_date == "大前天":
-        return text_date
+        return None
