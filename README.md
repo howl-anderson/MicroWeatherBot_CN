@@ -18,7 +18,7 @@ SENIVERSE_KEY=xxxx rasa run actions
 
 ### 启动 rasa x
 ```bash
-rasa x
+rasa x --enable-api --auth-token 12345678
 ```
 
 启动后会自动打开浏览器窗口
