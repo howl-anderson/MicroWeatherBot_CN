@@ -6,14 +6,12 @@
 > checkpoint
 * greet
   - utter_greet
-> checkpoint
 
 ## simple path
 * weather_address_date-time{"address": "上海", "date-time": "明天"}
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## simple path
 > checkpoint
@@ -21,7 +19,6 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## address + date-time path with greet
 * weather_address{"address": "上海"}
@@ -30,7 +27,6 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## address + date-time path with greet
 > checkpoint
@@ -40,17 +36,14 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## date-time + address path with greet
-> checkpoint
 * weather_date-time{"date-time": "明天"}
   - utter_ask_address
 * weather_address{"address": "上海"}
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## date-time + address path
 * weather_date-time{"date-time": "明天"}
@@ -59,12 +52,10 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## None + date-time + address path
 * weather
   - utter_ask_date-time
-> checkpoint
 
 ## None + date-time + address path
 > checkpoint
@@ -74,7 +65,6 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## None + address + date-time path
 * weather
@@ -85,7 +75,6 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## None + date-time + address path with greet
 * greet
@@ -98,7 +87,6 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
 
 ## None + address + date-time path with greet
 * greet
@@ -111,10 +99,8 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-> checkpoint
   
-## with change address
-> checkpoint
+## with change address or date
 * weather_address_date-time{"address": "上海", "date-time": "明天"}
   - utter_working_on_it
   - action_report_weather
@@ -131,12 +117,26 @@
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
-
-## say goodbye in conversion
-> checkpoint
-* goodbye
-  - utter_goodbye
-> checkpoint
+ 
+## with change address
+* weather_address_date-time{"address": "上海", "date-time": "明天"}
+  - utter_working_on_it
+  - action_report_weather
+  - utter_report_weather
+* weather_address{"address": "北京"}
+  - utter_working_on_it
+  - action_report_weather
+  - utter_report_weather
+  
+## with change date
+* weather_address_date-time{"address": "上海", "date-time": "明天"}
+  - utter_working_on_it
+  - action_report_weather
+  - utter_report_weather
+* weather_address{"date-time": "明天"}
+  - utter_working_on_it
+  - action_report_weather
+  - utter_report_weather
 
 ## say goodbye
 * goodbye
