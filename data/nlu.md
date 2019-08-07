@@ -23,7 +23,6 @@
 - 去外边要穿外衣吗
 - 去外边要带夹克吗
 - 外边需要雨伞吗
-- 你知道[现在](date-time)外面冷不冷
 - 天气是不是很凉快
 - 我最近的天气是不是很冷
 - 摄氏度天气预报
@@ -47,16 +46,19 @@
 - [上海](address)什么天气
 - 不好意思可以帮我查[香港](address)的天气
 - [厦门](address)啥天气
-- [今天](date-time)台中天气如何
 - [上海](address)多热
 - [台北市](address)温度
 - [台南市](address)南区几度
+- [上海](address)啥温度
+- [台南市南区](address)现在几度
 
 ## intent:weather_address_date-time
 - 我要[上海](address)[明天](date-time)的天气
+- 我要[上海](address)[后天](date-time)的天气
 - [上海](address)[明天](date-time)的天气
 - [上海](address)[昨天](date-time)的天气
 - [上海](address)[前天](date-time)的天气
+- [上海](address)[后天](date-time)的天气
 - [下个星期五](date-time)在[南京](address)
 - [明天](date-time)在[北京](address)
 - [沈阳](address)[五天后](date-time)
@@ -91,13 +93,18 @@
 - [下星期日](date-time)[马来西亚](address)的天气会很热吗
 
 ## intent:weather_date-time
+- [今天](date-time)台中天气如何
+- 你知道[现在](date-time)外面冷不冷
 - 怎么能[下个星期日](date-time)
 - 还需要[昨天](date-time)
 - 我还要[昨天](date-time)
 - [明天](date-time)
+- [后天](date-time)
 - 我还很想[一月一号](date-time)
-- 明天[如何](date-time:明天)
+- [明天](date-time)如何
+- [后天](date-time)如何
 - [星期六](date-time)呢
+- [后天](date-time)呢
 - 现在[明天](date-time)
 - 关于[两天后](date-time)
 - 会不会[前天](date-time)
@@ -118,8 +125,6 @@
 - [下星期一](date-time)外边需要墨镜吗
 - [明天](date-time)的天气会很温和吗
 - [今天](date-time)天气很热耶
-- [上海](address)啥温度
-- [台南市南区](address)现在几度
 - 就让你问他[今天](date-time)天气几度
 - [两天后](date-time)的天气会不会很寒冷吗
 - [明天](date-time)的天气是不是很暖吗
