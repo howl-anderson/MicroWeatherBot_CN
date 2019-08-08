@@ -80,3 +80,17 @@ class ActionReportWeather(Action):
         # utter submit template
         # dispatcher.utter_template('utter_submit', tracker)
         # return []
+
+
+class ActionChitchat(Action):
+    """Returns the chitchat utterance dependent on the intent"""
+
+    def name(self):
+        return "action_chitchat"
+
+    def run(self, dispatcher, tracker, domain):
+
+        response = tracker.latest_message["response"].get("name")
+        print(tracker.latest_message["response"])
+        dispatcher.utter_message(' '.join(response.split('_')))
+        return []

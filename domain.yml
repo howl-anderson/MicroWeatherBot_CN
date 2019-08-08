@@ -5,6 +5,7 @@ intents:
 - weather_address
 - weather_address_date-time
 - weather_date-time
+- chitchat
 entities:
 - address
 - date-time
@@ -32,6 +33,7 @@ templates:
   - text: 系统不明白您说的话
 actions:
 - action_report_weather
+- action_chitchat
 - utter_ask_address
 - utter_ask_date-time
 - utter_goodbye

@@ -14,6 +14,18 @@ pipeline:
 
   - name: "rasa_contrib.nlu.classifiers.text_cnn_tf_classifier.TextCnnTensorFlowClassifier"
     max_steps: 600
+  - name: "rasa_contrib.nlu.featurizers.bert_featurizer.BertTextFeaturizer"
+  - name: ResponseSelector
+    epochs: 40
+    evaluate_every_num_epochs: 5
+    evaluate_on_num_examples: 256
+    hidden_layers_sizes_a:
+      - 128
+      - 64
+    hidden_layers_sizes_b:
+      - 128
+      - 64
+  - name: "EntitySynonymMapper"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
