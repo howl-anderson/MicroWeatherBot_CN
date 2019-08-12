@@ -51,6 +51,13 @@
 - [台南市](address)南区几度
 - [上海](address)啥温度
 - [台南市南区](address)现在几度
+- [上海](address)的天气
+- [上海](address)的天气怎么样
+- [上海](address)的天气怎么样？
+- [首都](address)的天气
+- [首都](address)的天气怎么样
+- [魔都](address)的天气
+- [魔都](address)的天气怎么样
 
 ## intent:weather_address_date-time
 - 我要[上海](address)[明天](date-time)的天气
@@ -91,6 +98,11 @@
 - [明天](date-time)[马来西亚](address)最近的天气是不是很冷
 - 为什么[下星期一](date-time)[马来西亚](address)天气那么凉快
 - [下星期日](date-time)[马来西亚](address)的天气会很热吗
+- [首都](address)[明天](date-time)的天气
+- [魔都](address)[下午](date-time)的天气
+- [首都](address)[明天](date-time)的天气怎么样
+- [魔都](address)[下午](date-time)的天气怎么样
+
 
 ## intent:weather_date-time
 - [今天](date-time)台中天气如何

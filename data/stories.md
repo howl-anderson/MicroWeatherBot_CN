@@ -2,10 +2,6 @@
 * greet
   - utter_greet
 
-## greet in conversion
-* greet
-  - utter_greet
-
 ## simple path
 * weather_address_date-time{"address": "上海", "date-time": "明天"}
   - utter_working_on_it
@@ -62,6 +58,18 @@
 * weather_address{"address": "上海"}
   - utter_ask_date-time
 * weather_date-time{"date-time": "明天"}
+  - utter_working_on_it
+  - action_report_weather
+  - utter_report_weather
+
+## greet > Weather > address > date-time path
+* greet
+  - utter_greet
+* weather
+  - utter_ask_date-time
+* weather_date-time{"date-time": "明天"}
+  - utter_ask_address
+* weather_address{"address": "上海"}
   - utter_working_on_it
   - action_report_weather
   - utter_report_weather
