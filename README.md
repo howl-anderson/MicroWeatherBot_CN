@@ -3,6 +3,14 @@
 bash ./install_dependency.bash
 ```
 
+
+## 训练
+本项目可以使用 GUI 来训练，但是可能会存在 bug, 因此目前推荐使用命令行来训练
+```bash
+rasa train
+```
+
+
 ## 启动
 ### 启动 action server
 ```bash
@@ -18,8 +26,9 @@ rasa x --enable-api --auth-token 12345678
 
 启动后会自动打开浏览器窗口
 
+
 ## 使用
-### 训练模型
+### GUI 训练模型 (使用命令行训练后，请忽略本步骤)
 在 rasa x 左侧菜单栏，点击 `训练` 按钮，训练模型
 
 ### 设定为 production model
@@ -27,4 +36,3 @@ rasa x --enable-api --auth-token 12345678
 
 ### 人机对话
 在 rasa x 左侧菜单栏，点击 `Talk to your bot` 菜单进入 人机对话界面
- 
