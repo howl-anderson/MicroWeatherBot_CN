@@ -1,11 +1,6 @@
 ## 安装
-### 安装 rasa x
-```pip
-pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
-```
-### 安装 rasa_nlu_addons
-```pip
-pip install -r requirements.txt
+```bash
+bash ./install_dependency.bash
 ```
 
 ## 启动
